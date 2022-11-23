@@ -39,23 +39,44 @@ section {
 
 .calculatorScreen {
     display: flex;
+    flex-direction: column;
     width: 460px;
     height: 100px;
     background-color: rgb(156, 173, 150);
     border-radius: 10px;
     margin-top: 7%;
     margin-bottom: 5%;
-    align-items: flex-end;
-    justify-content: right;
     border: 2px solid rgb(66, 66, 66);
+    /* align-items: flex-end;
+    justify-content: right; */
 }
 
-.calculatorScreen p {
+.result{
+    display: flex;
     color: rgb(58, 58, 58);
     font-size: 70px;
-    margin-bottom: 0.5%;
+    margin-top: 0;
+    margin-bottom: 3px;
     margin-right: 2%;
     font-family: "digital-7";
+    justify-content: right;
+}
+
+.input {
+    display: flex;
+    color: rgb(58, 58, 58);
+    font-size: 30px;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    margin-right: 2%;
+    font-family: "digital-7";
+    font-weight: lighter;
+    justify-content: right;
+    opacity: 0%;
+}
+
+.active {
+    opacity: 100%;
 }
 
 .upperButtons {
