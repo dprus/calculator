@@ -31,7 +31,7 @@ section {
     height: 800px;
     margin: auto;
     align-items: center;
-    background-color: rgb(185, 185, 185);
+    background: linear-gradient(90deg, rgba(180,180,180,1) 0%, rgba(150,150,150,1) 50%, rgba(87,87,87,1) 100%);
     border-radius: 4%;
     border: 2px solid rgb(66, 66, 66);
     box-shadow: 8px -5px 0px rgb(66, 66, 66);
