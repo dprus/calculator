@@ -37,7 +37,6 @@ function resultZero() {
 
 function displayNumbers() {
     if (this.textContent === '.' && result.innerHTML.includes('.')) return;
-    if (this.textContent === '.' && result.innerHTML === '.') return result.innerHTML = '.0';
     if (this.textContent === '.' && result.innerHTML === '0') {
         return result.innerHTML = '0.';
     }
@@ -45,8 +44,6 @@ function displayNumbers() {
         result.innerHTML = result.innerHTML.toString().slice(0, -1) + this.textContent;
         return result.textContent;
     }
-
-    // if (result.innerHTML === '0') return result.innerHTML = this.textContent;
     result.innerHTML += this.textContent;
 }
 
