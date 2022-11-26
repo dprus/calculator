@@ -42,9 +42,16 @@ function displayNumbers() {
     }
     if (result.innerHTML === '0') {
         result.innerHTML = result.innerHTML.toString().slice(0, -1) + this.textContent;
-        return result.textContent;
+        return result.innerHTML;
     }
+    functionLenght();
     result.innerHTML += this.textContent;
+}
+
+function functionLenght() {
+    if (result.innerHTML.length >= 13) {
+        return result.innerHTML = "";
+    }
 }
 
 
