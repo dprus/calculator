@@ -62,8 +62,14 @@ section {
     justify-content: right;
 }
 
-.input {
+.calcScreen {
     display: flex;
+    justify-content: right;
+    opacity: 100%;
+}
+
+.previousNumber,
+.mathSign {
     color: rgb(58, 58, 58);
     font-size: 30px;
     margin-top: 3px;
@@ -71,12 +77,13 @@ section {
     margin-right: 2%;
     font-family: "digital-7";
     font-weight: lighter;
-    justify-content: right;
-    opacity: 0%;
+    
 }
 
+
+
 .active {
-    opacity: 100%;
+    opacity: 0%;
 }
 
 .upperButtons {
