@@ -77,12 +77,9 @@ function operate() {
     previousNumber.innerHTML = result.innerHTML;
     mathSign.innerHTML = this.textContent;
     result.innerHTML = '';
-    // calcScreenActive();
 }
 
-// function calcScreenActive() {
-//     calcScreen.classList.add("active");
-// }
+
 
 function showResult() {
     if (previousNumber.innerHTML === '0' || result.innerHTML === '0') return;
@@ -92,15 +89,6 @@ function showResult() {
     let b = Number(previousNumber.innerHTML);
     let operator = mathSign.innerHTML;
 
-    // if (operator = "+") {
-    //     return result = a + b;
-    // } else if (operator = "-") {
-    //     return result = b - a;
-    // } else if (operator = "×") {
-    //     return result = a * b;
-    // } else if (operator = "÷") {
-    //     return result = b / a;
-    // }
     switch (operator) {
         case '+':
             resultTwo = a + b;
@@ -132,7 +120,6 @@ function showResult() {
 
 operationButtons.forEach((button) => button.addEventListener('click', operate))
 equalBtn.addEventListener('click', showResult);
-// clearBtn.addEventListener('click', clearScreen);
 numberButtons.forEach((button) => {
     button.addEventListener('click', displayNumbers)
 })
