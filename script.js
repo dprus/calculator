@@ -1,4 +1,5 @@
 let result = document.querySelector('.result');
+let resultTwo;
 let previousNumber = document.querySelector('.previousNumber');
 let mathSign = document.querySelector('.mathSign');
 let slicedResult;
@@ -34,11 +35,11 @@ deleteBtn.addEventListener('click', () => {
 //Display 0 if all numbers are removed by delete button
 function resultZero() {
     if (result.textContent == '') {
-        result.innerHTML = 0;
+        result.innerHTML = "0";
     }
 
     if (previousNumber.textContent == '') {
-        previousNumber.innerHTML = 0;
+        previousNumber.innerHTML = "0";
     }
 }
 
@@ -51,15 +52,15 @@ function displayNumbers() {
         result.innerHTML = result.innerHTML.toString().slice(0, -1) + this.textContent;
         return result.innerHTML;
     }
-    // functionLenght();
+    functionLenght();
     result.innerHTML += this.textContent;
 }
 
-// function functionLenght() {
-//     if (result.innerHTML.length >= 12) {
-//         location.reload();
-//     }
-// }
+function functionLenght() {
+    if (result.innerHTML.length >= 12) {
+        location.reload();
+    }
+}
 
 
 function operate() {
@@ -102,24 +103,25 @@ function showResult() {
     // }
     switch (operator) {
         case '+':
-            result = a + b;
-            console.log(result);
+            resultTwo = a + b;
+            console.log(resultTwo);
             break;
         case '-':
-            result = b - a;
-            console.log(result);
+            resultTwo = b - a;
+            console.log(resultTwo);
             break;
         case '×':
-            result = a * b;
-            console.log(result);
+            resultTwo = a * b;
+            console.log(resultTwo);
+            break;
         case '÷':
-            result = b / a;
-            console.log(result);
+            resultTwo = b / a;
+            console.log(resultTwo);
             break;
     }
 
 
-    result.innerHTML = result;
+    result.innerHTML = resultTwo;
     previousNumber.innerHTML = '0';
     mathSign.innerHTML = '';
 
